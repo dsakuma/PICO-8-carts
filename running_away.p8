@@ -54,9 +54,9 @@ end
 function move_asteroid()
 	if(ax+aw>=127) then
   adx=-1
-elseif(ax-aw<=0) then
+ elseif(ax-aw<=0) then
   adx=1
-end
+ end
 	
 	if(ay+ah>=127) then
 	 ady=-1
