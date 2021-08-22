@@ -52,20 +52,20 @@ function move_player()
 end
 
 function move_asteroid()
-		if(ax+aw>=127) then
-		  adx=-1
-		elseif(ax-aw<=0) then
-		  adx=1
-		end
+	if(ax+aw>=127) then
+  adx=-1
+elseif(ax-aw<=0) then
+  adx=1
+end
+	
+	if(ay+ah>=127) then
+	 ady=-1
+	elseif(ay-ah<=0) then
+  ady=1
+	end
 		
-		if(ay+ah>=127) then
-			 ady=-1
-		elseif(ay-ah<=0) then
-		  ady=1
-		end
-		
-		ax=ax+adx
-		ay=ay+ady
+	ax=ax+adx
+	ay=ay+ady
 end
 -->8
 function rndb(low,high)
